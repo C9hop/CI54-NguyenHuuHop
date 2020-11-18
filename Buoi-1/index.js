@@ -57,3 +57,18 @@
 // }
 // test()
 //---------------------------------------------------------------------
+let answer = document.getElementsByClassName("answer");
+let yes = document.getElementById("yes");
+let no = document.getElementById("no");
+
+yes.addEventListener("click", () => {
+  alert("<3!!!");
+});
+no.addEventListener("mouseover", () =>{
+   if (answer[0].style.flexDirection == "row"){
+       answer[0].style.flexDirection = "row-reverse";
+    }
+     else{ 
+       answer[0].style.flexDirection = "row"
+    }
+});
