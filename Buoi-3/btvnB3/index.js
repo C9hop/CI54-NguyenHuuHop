@@ -1,63 +1,35 @@
-import{Student} from './student.js'
-import{StudentCollection} from './studentCollection.js'
+import {Student} from './student.js'
+import {StudentCollection} from './studentCollection.js'
             const stdCollection = new StudentCollection
             const std1 = new Student(
-                'Nguyen Van ABC',
+                'Nobita',
                 '60TH5',
                 20,
-                'Thai Binh'
+                'Tokyo'
             )
             const std2 = new Student(
-                'Nguyen Van B',
+                'Doraemon',
                 '60TH1',
                 18,
-                'Thanh Hoa'
+                'Tokyo'
             )
             const std3 = new Student(
-                'Tran Thi C',
+                'Xuka',
                 '60TH4',
                 21,
-                'Ha Noi'
+                'Tokyo'
             )
             const std4 = new Student(
-                'Nguyen Huu C',
+                'Chaien',
                 '60TH4',
                 18,
-                'Nam Dinh'
+                'Tokyo'
             )    
-            const std5 = new Student(
-                'Nguyen Thi D',
-                '63TH5',
-                15,
-                'Ha Noi'
-            )    
-            const std6 = new Student(
-                'Tran Van E',
-                '60TH5',
-                18,
-                'Thai Binh'
-            )    
-            const std7 = new Student(
-                'Nguyen Huu ABC',
-                '60TH4',
-                21,
-                'Ha Noi'
-            )    
-            const std8 = new Student(
-                'Tran Thi K',
-                '60TH1',
-                21,
-                'Nam Dinh'
-            )
             stdCollection.addStd(std1)
             stdCollection.addStd(std2)
             stdCollection.addStd(std3)
             stdCollection.addStd(std4)
-            stdCollection.addStd(std5)
-            stdCollection.addStd(std6)
-            stdCollection.addStd(std7)
-            stdCollection.addStd(std8)
-            stdCollection.show()
+            // stdCollection.show()
             console.log('Danh sach hoc sinh:')
             console.log(stdCollection)
             console.log('---------------------------------------------------')
@@ -69,8 +41,7 @@ import{StudentCollection} from './studentCollection.js'
             console.log('---------------------------------------------------')
             console.log('Hoc sinh ten la A :')
             console.log(stdCollection.findOfName('ABC'))
-            // em chưa show và bắt event lên HTML nên hiển thị bên Console ạ!!!!
-
+            stdCollection.showList()
 
 
 

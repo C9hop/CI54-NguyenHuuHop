@@ -10,7 +10,7 @@ const style =`
 }
 .card-body{
     border-top: 1px solid #dbdbdb;
-    padding: 20px;
+    padding: 20px;  
 }
 </style>
 `
@@ -22,13 +22,15 @@ class CardComponent extends HTMLElement{
         this.imgSrc = this.getAttribute('imgsrc')
         this.title = this.getAttribute('title')
         this.description = this.getAttribute('description')
+    // const { imgSrc, title, description } = this
+
         this._shadowDom.innerHTML = `
         ${style}
             <div class="card">
                 <img src="${this.imgSrc}"></img>
                 <div class="card-body">
                     <div class="title">${this.title}</div>
-                    <div class="${this.description}">Description</div>
+                    <div class="description">${this.description}</div>
                 </div>
             </div>
         `

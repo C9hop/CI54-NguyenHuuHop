@@ -1,4 +1,5 @@
 
+            import './cardStudent.js'
             export class StudentCollection{
                 listStd;
                 constructor(){
@@ -25,5 +26,18 @@
                 show(){
                         document.querySelector('#list').innerHTML = this.listStd[0].toHTML()
 
+                }
+                showList(){
+                    const list = document.querySelector("#list")
+                    this.listStd.map((student)=>{
+                        list.innerHTML +=`
+                            <card-container ten=${student.ten} 
+                            lop=${student.lop}
+                            tuoi=${student.tuoi}
+                            diachi=${student.diaChi}  >
+
+                            </card-container>
+                        `
+                    })
                 }
             }
