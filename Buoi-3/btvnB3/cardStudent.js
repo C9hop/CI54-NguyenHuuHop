@@ -28,7 +28,7 @@ class CardStudent extends HTMLElement{
         this._shadowDom.innerHTML = `
         ${style}
             <div class="card">
-                <img src=${this.imgSrc}/>
+                <img src='https://upload.wikimedia.org/wikipedia/vi/thumb/f/f7/Nobita001.png/153px-Nobita001.png'/>
                 <div class="card-body">
                     <div class="ten">${this.ten}</div>
                     <div class="lop">Class: ${this.lop}</div>
