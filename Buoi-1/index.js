@@ -59,7 +59,7 @@
 //---------------------------------------------------------------------
 let answer = document.getElementsByClassName("answer");
 let yes = document.getElementById("yes");
-let no = document.getElementById("no");
+let no = document.getElementById("no"); 
 
 yes.addEventListener("click", () => {
   alert("<3!!!");
