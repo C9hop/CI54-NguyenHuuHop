@@ -2,24 +2,28 @@ import {Student} from './student.js'
 import {StudentCollection} from './studentCollection.js'
             const stdCollection = new StudentCollection
             const std1 = new Student(
+                './img/nobita.jpg',
                 'Nobita',
                 '60TH5',
                 20,
                 'Tokyo'
             )
             const std2 = new Student(
+                './img/doraemon.jpg',
                 'Doraemon',
                 '60TH1',
                 18,
                 'Tokyo'
             )
             const std3 = new Student(
+                './img/xuka.jpg',
                 'Xuka',
                 '60TH4',
                 21,
                 'Tokyo'
             )
             const std4 = new Student(
+                `./img/chi.jpg`,
                 'Chaien',
                 '60TH4',
                 18,

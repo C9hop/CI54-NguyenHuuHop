@@ -31,7 +31,9 @@
                     const list = document.querySelector("#list")
                     this.listStd.map((student)=>{
                         list.innerHTML +=`
-                            <card-container ten=${student.ten} 
+                            <card-container
+                            imgSrc=${student.img} 
+                            ten=${student.ten} 
                             lop=${student.lop}
                             tuoi=${student.tuoi}
                             diachi=${student.diaChi}  >

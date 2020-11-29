@@ -1,9 +1,11 @@
 export class Student{
+    img;
     ten;
     lop;
     tuoi;
     diaChi;
-    constructor(ten, lop, tuoi, diaChi){
+    constructor(img, ten, lop, tuoi, diaChi){
+        this.img = img
         this.ten = ten
         this.lop = lop
         this.tuoi = tuoi
