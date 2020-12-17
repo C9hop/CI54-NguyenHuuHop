@@ -27,7 +27,7 @@ const style =`
     }
 `
 import {redirect} from '../index.js'
-import { getDataFromDoc, getDataFromDocs }  from "../utils.js"
+import { getDataFromDoc, getDataFromDocs, saveTolocalStorage }  from "../utils.js"
 class loginScreen extends HTMLElement{
     constructor(){
         super()
@@ -74,7 +74,9 @@ class loginScreen extends HTMLElement{
                 if(user.empty){
                     alert('Sai email/ password')
                 }else{
-                    console.log(getDataFromDocs(user)[0])
+                    saveTolocalStorage('currentUser', getDataFromDocs(user)[0])
+                    redirect('story')
+                    // console.log(getDataFromDocs(user)[0])
                 }
 
                     // const user = {
